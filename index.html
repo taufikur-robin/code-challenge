@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1024 height=1024 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/code-challenge-v3.0.0.loader.js";
+      var loaderUrl = buildUrl + "/code-challenge-v3.0.1.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/code-challenge-v3.0.0.data",
-        frameworkUrl: buildUrl + "/code-challenge-v3.0.0.framework.js",
-        codeUrl: buildUrl + "/code-challenge-v3.0.0.wasm",
+        dataUrl: buildUrl + "/code-challenge-v3.0.1.data",
+        frameworkUrl: buildUrl + "/code-challenge-v3.0.1.framework.js",
+        codeUrl: buildUrl + "/code-challenge-v3.0.1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "food-hygiene-unity",
@@ -104,8 +104,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1024px";
+        canvas.style.height = "1024px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
